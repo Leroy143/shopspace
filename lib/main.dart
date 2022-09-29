@@ -49,7 +49,11 @@ Future<void> main() async {
           child = const LoginScreen();
       }
 
-      return MaterialApp(theme: CustomTheme.getTheme(),home: child);
+      return MaterialApp(
+        theme: CustomTheme.getTheme(),
+        home: child,
+        debugShowCheckedModeBanner: false
+      );
     },), )
   );
 }
